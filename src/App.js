@@ -126,7 +126,7 @@ function App() {
       )}
 
       {state==="state2" &&(
-                        <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+                        <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
                         <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
                         <h2 className="font-bold italic ml-4"> Learnings</h2>
                         <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -145,7 +145,7 @@ function App() {
       )}
 
       {state==="state3" && (
-                <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+                <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
                 <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
                 <h2 className="font-bold italic ml-4"> Learnings</h2>
                 <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -162,7 +162,7 @@ function App() {
 
       
         {state==="state4" && (
-                        <div className="mx-auto w-96  mb-60 h-96 overflow-y-auto rounded-xl border-2 bg-blue-100 border-green-800">
+                        <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 overflow-y-auto rounded-xl border-2 bg-blue-100 border-green-800">
                         <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
                         <h2 className="font-bold italic ml-4"> Learnings</h2>
                         <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -231,7 +231,7 @@ return (
 
 {
   state==='state5' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -250,7 +250,7 @@ return (
 
 {
   state==='state6' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -267,7 +267,7 @@ return (
 
 {
   state==='state7' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800 overflow-y-auto">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800 overflow-y-auto">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -282,7 +282,7 @@ return (
 
 {
   state==='state8' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -297,7 +297,7 @@ return (
 
 {
   state==='state9' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -313,7 +313,7 @@ return (
 
 {
   state==='state10' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -331,7 +331,7 @@ return (
 
 {
   state==='state11' && (
-    <div className="mx-auto w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800 overflow-y-auto">
+    <div className="mx-auto sm:w-3/4 w-96  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800 overflow-y-auto">
     <div className="pl-4 top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
     <h2 className="font-bold italic ml-4"> Learnings</h2>
     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -364,7 +364,7 @@ return (
 
 
       
-      <div className=" h-auto mx-4 rounded-3xl lg:w-1/2 lg:mx-auto">
+      <div className=" h-auto mx-4 rounded-3xl sm:w-1/2 sm:mx-auto">
           <Slideshow interval={2000} />
       </div>
 
