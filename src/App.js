@@ -47,11 +47,11 @@ function App() {
     }
   }
   return (
-    <div className="h-full w-screen mx-1 my-1">
+    <div className="h-full w-screen mx-0 my-0 border-box">
       
-      <div className="fixed top-0 right-0 left-0 mx-1 bg-blue-400 z-30">
+      <div className="fixed top-0 right-0 left-0 mx-1 z-30 bg-gray-700 rounded-xl">
           <div className=" h-16 float-left w-full flex items-center " >
-            <h1  className="font-formal text-3xl font-bold text-white ">Sourabh Pargai</h1>
+            <h1  className="font-formal text-3xl font-bold text-white">Sourabh Pargai</h1>
           </div> 
 
           <div className="float-right none">
@@ -60,12 +60,18 @@ function App() {
 
       </div>
 
-      <div className="w-auto xl:h-96 mx-2" id="about">
-              <div className="sm:mx-auto  md:mx-auto xl:float-right xl:w-2/5 mt-16 ">
-                <img  className="sm:mx-auto md:mx-auto xl:float-right lg:w-3/5 mt-28 lg:mt-1 xl:mr-28" src="WhatsApp Image 2024-04-19 at 1.19.16 PM-modified.png" alt="Image" />
+      <div className="w-auto mx-2">
+              <div className="relative sm:mx-auto  md:mx-auto overflow-hidden flex justify-center items-center">
+                <img  className="mt-20 lg:h-1/2 lg:w-1-2 w-full rounded-xl opacity-75 border-8 border-gray-400 border-b-white " src="WhatsApp Image 2024-05-06 at 10.25.22 PM.jpeg" alt="Image" />
+                <div className="absolute top-1/2 text-3xl text-center font-bold italic">
+                  <h1>Hi there,</h1>
+                  <h1>It's me</h1>
+                  <h1>Sourabh Pargai</h1>
+                </div>
               </div>
+              <img className=" h-60 mx-auto my-2 pt-16 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png" id="about"/>
               <h1 className="text-center font-extrabold lg:mt-36">About me</h1>
-              <div className="bg-blue-100 rounded-xl xl:float-left xl:w-3/5 xl:mt-40 px-4 border-2 border-slate-400 border-solid">
+              <div className=" rounded-xl px-4 border-8 border-t-white border-left border-right border-bottom border-gray-400 border-solid" >
                 <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
                 <ul className="px-4" style={{listStyleType: "disc"}}>
                   <li>He strongly believe in two things, one is he himself and other his written code.</li>
@@ -368,25 +374,25 @@ return (
           <Slideshow interval={2000} />
       </div>
 
-      <div className="bg-blue-200 w-full h-24 mt-40 xl:mt-0 " id="contact">
-      <a href="mailto:Sourabhpargai1234@gmail.com" className="flex justify-center hover:color-blue-500">Personal Mail</a>
-      <a href="mailto:Sourabh.16172@gnindia.dronacharya.info" className="flex justify-center hover:color-blue-500">Official Mail</a>
+      <div className="bg-gray-800 w-full h-24 mt-40 xl:mt-0 " id="contact">
+      <a href="mailto:Sourabhpargai1234@gmail.com" className="flex justify-center text-white hover:text-blue-500">Personal Mail</a>
+      <a href="mailto:Sourabh.16172@gnindia.dronacharya.info" className="flex justify-center text-white hover:text-blue-500">Official Mail</a>
 
       <div className="flex justify-center items-center gap-8 ">
         <a href="https://www.instagram.com/sourabhpargai1234/">
-          <AiFillInstagram style={{height: 50, width: 50}}/>
+          <AiFillInstagram style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="lightblue"} onMouseOut={({target})=>target.style.color="white"}/>
         </a>
         <a href="https://codeforces.com/profile/sourabhpargai5907.12e">
-          <SiCodeforces style={{height: 50, width: 50}}/>
+          <SiCodeforces style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="lightblue"} onMouseOut={({target})=>target.style.color="white"}/>
         </a>
         <a href="https://www.linkedin.com/in/sourabh-pargai-2a830123b/">
-          <FaLinkedin style={{height: 50, width: 50}}/>
+          <FaLinkedin style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="lightblue"} onMouseOut={({target})=>target.style.color="white"}/>
         </a>
         <a href="https://github.com/Sourabhpargai1234">
-          <FaGithub style={{height: 50, width: 50}}/>
+          <FaGithub style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="lightblue"} onMouseOut={({target})=>target.style.color="white"}/>
         </a>
         <a href="https://leetcode.com/u/sourabhpargai1234/">
-          <SiLeetcode style={{height: 50, width: 50}}/>
+          <SiLeetcode style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="white"}/>
         </a>
       </div>
       </div>

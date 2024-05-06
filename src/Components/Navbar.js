@@ -16,12 +16,12 @@ function Navbar() {
 
     return (
         <div>
-            <div id="abc" className=" hidden sm:inline text-blue-800 font-bold">
-                <a href="#about" className="sm:border-none border-2 border-gray-300 text-center w-96 mx-2 hover:text-green-400 ">About</a>
-                <a href="#projects" className="sm:border-none border-2 border-gray-300 text-center mx-2 hover:text-green-400 ">Projects</a>
-                <a href="#skills" className="sm:border-none border-2 border-gray-300 text-center mx-2 hover:text-green-400 ">Skills</a>
-                <a href="#achieve" className="sm:border-none border-2 border-gray-300 text-center mx-2 hover:text-green-400 ">Achievements</a>
-                <a href="#contact" className="sm:border-none border-2 border-gray-300 text-center mx-2 hover:text-green-400 ">Contact</a>
+            <div id="abc" className=" hidden sm:inline text-white font-bold">
+                <a href="#about" className="sm:border-none border-gray-300 text-center w-96 mx-2 hover:text-green-400 ">About</a>
+                <a href="#projects" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Projects</a>
+                <a href="#skills" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Skills</a>
+                <a href="#achieve" className="sm:border-none border-gray-300 text-center mx-2 hover:text-green-400 ">Achievements</a>
+                <a href="#contact" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Contact</a>
             </div>
 
             <a id="button" className='icon' onClick={() => myFunction()}>
