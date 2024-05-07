@@ -25,7 +25,7 @@ function Navbar() {
             </div>
 
             <a id="button" className='icon' onClick={() => myFunction()}>
-                <div className="sm:hidden fixed top-2 right-2 items-center cursor-pointer">
+                <div className="sm:hidden fixed top-2 right-2 mr-2 mt-2 items-center cursor-pointer">
                     <div className="bar1 bg-white w-10 h-2 my-1"></div>
                     <div className="bar2 bg-white w-10 h-2 my-1"></div>
                     <div className="bar3 bg-white w-10 h-2 my-1"></div>
