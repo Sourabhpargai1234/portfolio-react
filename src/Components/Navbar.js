@@ -1,4 +1,6 @@
 import './Navbar.css';
+import React, { useEffect } from 'react';
+
 
 function Navbar() {
     var i=1;
@@ -13,11 +15,12 @@ function Navbar() {
         }
         document.getElementById("button").classList.toggle("change");
     }
+    
 
     return (
         <div>
-            <div id="abc" className=" hidden sm:inline text-white font-bold">
-                <a href="#about" className="sm:border-none border-gray-300 text-center w-96 mx-2 hover:text-green-400 ">About</a>
+            <div id="abc" className="hidden sm:inline text-white font-bold">
+                <a href="#about" className=" mx-2 sm:border-none border-gray-300 text-center w-96 hover:text-green-400 ">About</a>
                 <a href="#projects" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Projects</a>
                 <a href="#skills" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Skills</a>
                 <a href="#achieve" className="sm:border-none border-gray-300 text-center mx-2 hover:text-green-400 ">Achievements</a>

@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { IoMdCloseCircle } from "react-icons/io";
+import './App.css';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
   }
   return (
     <div className="h-full w-full border-box">
+
       
       <div className="fixed top-0 right-0 left-0  z-40 bg-gray-800 ">
           <div className=" h-16 float-left w-full flex items-center " >
@@ -60,28 +62,46 @@ function App() {
 
       </div>
 
-      <div className="w-auto">
-              <div className="relative sm:mx-auto  md:mx-auto overflow-hidden flex justify-center items-center">
-                <img  className="mt-20 lg:h-1/2 lg:w-1-2 w-full rounded-xl opacity-75 border-8 border-gray-400 border-b-white " src="WhatsApp Image 2024-05-06 at 10.25.22 PM.jpeg" alt="Image" />
-                <div className="absolute top-1/2 text-3xl text-center font-bold italic">
-                  <h1>Hi there,</h1>
-                  <h1>It's me</h1>
-                  <h1>Sourabh Pargai</h1>
-                </div>
-              </div>
-              <img className=" h-60 mx-auto my-2 pt-16 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png" id="about"/>
-              <h1 className="text-center font-extrabold sm:top-24 sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
-              <div className=" rounded-xl px-4 border-8 border-t-white border-left border-right border-bottom border-gray-400 border-solid" >
-                <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
-                <ul className="px-4" style={{listStyleType: "disc"}}>
-                  <li>He strongly believe in two things, one is he himself and other his written code.</li>
-                  <li>Pandemic situations had taught him how to survive in adverse situation and survive with minimum or almost no resources, so lockdown period  was his worst case scenerio</li>
-                </ul>
-                <h1><b>-Always wander in search of Knowledge</b></h1>
-              </div>
-      </div> 
 
-      <h1 className="z-0 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl" id="projects">Projects</h1>
+<div id="first" >
+      <div className="area" id="about">
+                <ul className="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+              </div >
+
+
+              <div className="context">
+              
+                  <img className=" mt-16 md:h-80 h-60 mx-auto my-2 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
+                  <h1 className=" lg:w-3/4 lg:mx-auto text-center font-extrabold sm:top-24 sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
+                  <div className="relative text-white font-bold font-lg lg:w-3/4 my-auto mx-auto rounded-xl h-full px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
+                    <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
+                    <ul className="px-4" style={{listStyleType: "disc"}}>
+                      <li>He strongly believe in two things, one is he himself and other his written code.</li>
+                      <li>Pandemic situations had taught him how to survive in adverse situation and survive with minimum or almost no resources</li>
+                    </ul>
+                      - Always wander in search of Knowledge
+                  </div>
+             
+              </div>
+
+</div>
+
+
+
+
+<div id="projects" className="pt-8">
+<h1 className="z-0 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl" >Projects</h1>
       <div className="bg-blue-100 rounded-3xl mb-8">
       <h3 className="mx-4" >1.Mini Project: Disease Prediction Model</h3>
       <h3 className="mx-4">Status: Completed</h3>
@@ -109,10 +129,12 @@ function App() {
         <h1 className="mx-4">4. A coding editor which comprises of coding test contests with concepts for better learning(combination of geeksforgeeks and leetcode)</h1>
         <h1 className="mx-4">5. NLP project on creating a LLM model which can understand rich vedic and sanskrit texts</h1>
       </div>
+</div>
 
 
-      <h1 className="z-20 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl" id="skills">Skills</h1>
-      <h3 className="text-center">Click on each section to know more about skill-level</h3>
+<div id="skills" className="pt-8 ">
+<h1 className="z-20 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">Skills</h1>
+      <h3 className="pt-8 text-xl text-green-600 text-center sm:mt-40 ">Click on each section to know more about skill-level</h3>
       {state==="state1" && (
                         <div id="container"  className=" grid grid-cols-2 grid-rows-5 lg:grid-cols-4 lg:grid-rows-3 lg:float-left w-full justify-center items-center">
                         <div onClick={() => handleClick('state2')} id="s1" className="box bg-blue-100 h-24 rounded-3xl flex justify-center items-center lg:mx-10 mx-2 my-2 lg:w-3/4 border-2 border-black border-solid">
@@ -132,7 +154,7 @@ function App() {
       )}
 
       {state==="state2" &&(
-                        <div className="overflow-auto mx-auto sm:w-3/4 w-full  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+                        <div className=" overflow-auto sm:w-3/4 w-full  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
                         <div className="top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
                         <h2 className="font-bold italic ml-4"> Learnings</h2>
                         <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -358,6 +380,7 @@ return (
   </div>
   )
 }
+</div>
 
 
 
