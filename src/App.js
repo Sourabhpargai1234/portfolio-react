@@ -62,6 +62,7 @@ function App() {
 
       </div>
 
+<div id="top"></div>
 
 <div id="first" >
       <div className="area" id="about">
@@ -80,11 +81,11 @@ function App() {
               </div >
 
 
-              <div className="context">
+              <div className="context ">
               
                   <img className=" mt-16 md:h-80 h-60 mx-auto my-2 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
-                  <h1 className=" lg:w-3/4 lg:mx-auto text-center font-extrabold sm:top-24 sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
-                  <div className="relative text-white font-bold font-lg lg:w-3/4 my-auto mx-auto rounded-xl h-full px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
+                  <h1 className="z-10 lg:w-3/4 lg:mx-auto text-center font-extrabold sm:top-24 sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
+                  <div className="text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
                     <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
                     <ul className="px-4" style={{listStyleType: "disc"}}>
                       <li>He strongly believe in two things, one is he himself and other his written code.</li>
