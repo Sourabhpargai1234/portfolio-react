@@ -62,7 +62,7 @@ function App() {
 
       </div>
 
-<div id="top"></div>
+      <div id="top"></div>
 
 <div id="first" >
       <div className="area" id="about">
