@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { IoMdCloseCircle } from "react-icons/io";
+import { TbTriangleInverted } from "react-icons/tb";
 import './App.css';
 
 function App() {
@@ -81,11 +82,11 @@ function App() {
               </div >
 
 
-              <div className="context ">
+              <div className="context absolute top-16 bottom-16">
               
                   <img className=" mt-16 md:h-80 h-60 mx-auto my-2 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
-                  <h1 className="z-10 lg:w-3/4 lg:mx-auto text-center font-extrabold sm:top-24 sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
-                  <div className="text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
+                  <h1 className="sticky top-16 sm:top-6 lg:top-20 z-10 lg:w-3/4 lg:mx-auto text-center font-extrabold bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
+                  <div className="overflow-y-auto text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
                     <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
                     <ul className="px-4" style={{listStyleType: "disc"}}>
                       <li>He strongly believe in two things, one is he himself and other his written code.</li>
@@ -93,10 +94,12 @@ function App() {
                     </ul>
                       - Always wander in search of Knowledge
                   </div>
+                  <div className="flex justify-center"><TbTriangleInverted  style={{height: 50, width: 50, color: "white"}}/></div>
              
               </div>
 
 </div>
+
 
 
 
@@ -137,7 +140,7 @@ function App() {
 <h1 className="z-20 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">Skills</h1>
       <h3 className="pt-8 text-xl text-green-600 text-center sm:mt-40 ">Click on each section to know more about skill-level</h3>
       {state==="state1" && (
-                        <div id="container"  className=" grid grid-cols-2 grid-rows-5 lg:grid-cols-4 lg:grid-rows-3 lg:float-left w-full justify-center items-center">
+                        <div id="container"  className="grid grid-cols-2 grid-rows-5 lg:grid-cols-4 lg:grid-rows-3 lg:float-left w-full justify-center items-center">
                         <div onClick={() => handleClick('state2')} id="s1" className="box bg-blue-100 h-24 rounded-3xl flex justify-center items-center lg:mx-10 mx-2 my-2 lg:w-3/4 border-2 border-black border-solid">
                           DSA with C++
                         </div>
@@ -155,8 +158,8 @@ function App() {
       )}
 
       {state==="state2" &&(
-                        <div className=" overflow-auto sm:w-3/4 w-full  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
-                        <div className="top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
+                        <div className="mx-auto overflow-auto sm:w-3/4 w-full  mb-60 h-96 rounded-xl border-2 bg-blue-100 border-green-800">
+                        <div className=" top-0 float-right" onClick={() => setState('state1')}><IoMdCloseCircle style={{height:40, width:40}}/></div>
                         <h2 className="font-bold italic ml-4"> Learnings</h2>
                         <ul className="px-4" style={{listStyleType: "disc"}}>
                           <li>Solved 50+ DSA questions on Codeforces</li>
