@@ -82,11 +82,11 @@ function App() {
               </div >
 
 
-              <div className="context absolute top-16 bottom-16">
+              <div className="overflow-y-auto context absolute top-16 bottom-16">
               
                   <img className=" mt-16 md:h-80 h-60 mx-auto my-2 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
                   <h1 className="sticky top-16 sm:top-6 lg:top-20 z-10 lg:w-3/4 lg:mx-auto text-center font-extrabold bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
-                  <div className="overflow-y-auto text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
+                  <div className="text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
                     <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
                     <ul className="px-4" style={{listStyleType: "disc"}}>
                       <li>He strongly believe in two things, one is he himself and other his written code.</li>
@@ -94,7 +94,7 @@ function App() {
                     </ul>
                       - Always wander in search of Knowledge
                   </div>
-                  <div className="flex justify-center"><TbTriangleInverted  style={{height: 50, width: 50, color: "white"}}/></div>
+                  <div className="flex justify-center"><a href="#projects"><TbTriangleInverted  style={{height: 50, width: 50, color: "white"}}/></a></div>
              
               </div>
 
