@@ -85,7 +85,7 @@ function App() {
               <div className="overflow-y-auto context absolute top-16 bottom-16">
               
                   <img className=" mt-16 md:h-80 h-60 mx-auto my-2 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
-                  <h1 className="sticky top-16 sm:top-6 lg:top-20 z-10 lg:w-3/4 lg:mx-auto text-center font-extrabold bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
+                  <h1 className="sticky top-20 z-0 lg:w-3/4 lg:mx-auto text-center font-extrabold bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
                   <div className="text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
                     <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
                     <ul className="px-4" style={{listStyleType: "disc"}}>
@@ -105,7 +105,7 @@ function App() {
 
 
 <div id="projects" className="pt-8">
-<h1 className="z-0 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl" >Projects</h1>
+<h1 className="z-0 text-center font-extrabold mt-16 top-20 sticky bg-gray-600 mx-2 text-white rounded-xl" >Projects</h1>
       <div className="bg-blue-100 rounded-3xl mb-8">
       <h3 className="mx-4" >1.Mini Project: Disease Prediction Model</h3>
       <h3 className="mx-4">Status: Completed</h3>
@@ -137,7 +137,7 @@ function App() {
 
 
 <div id="skills" className="pt-8 ">
-<h1 className="z-20 text-center font-extrabold mt-16 sm:top-24  sticky top-16 bg-gray-600 mx-2 text-white rounded-xl">Skills</h1>
+<h1 className="z-20 text-center font-extrabold mt-16 sm:top-24  sticky top-20 bg-gray-600 mx-2 text-white rounded-xl">Skills</h1>
       <h3 className="pt-8 text-xl text-green-600 text-center sm:mt-40 ">Click on each section to know more about skill-level</h3>
       {state==="state1" && (
                         <div id="container"  className="grid grid-cols-2 grid-rows-5 lg:grid-cols-4 lg:grid-rows-3 lg:float-left w-full justify-center items-center">
@@ -393,7 +393,7 @@ return (
 
 
 
-      <h1 className="mt-40 mb-36 z-30 text-center font-extrabold sm:mt-96 sticky top-16 sm:top-24 bg-gray-600 mx-2 text-white rounded-xl" id="achieve">Achievements</h1>
+      <h1 className="mt-40 mb-36 z-30 text-center font-extrabold sm:mt-96 sticky top-20 sm:top-24 bg-gray-600 mx-2 text-white rounded-xl" id="achieve">Achievements</h1>
 
 
       
@@ -405,7 +405,7 @@ return (
       <a href="mailto:Sourabhpargai1234@gmail.com" className="flex justify-center text-white hover:text-blue-500">Personal Mail</a>
       <a href="mailto:Sourabh.16172@gnindia.dronacharya.info" className="flex justify-center text-white hover:text-blue-500">Official Mail</a>
 
-      <div className="flex mx-auto justify-center items-center gap-8 ">
+      <div className="flex mx-4 justify-between items-center">
         <a href="https://www.instagram.com/sourabhpargai1234/">
           <AiFillInstagram style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="lightblue"} onMouseOut={({target})=>target.style.color="white"}/>
         </a>

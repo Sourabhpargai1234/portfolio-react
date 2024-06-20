@@ -1,39 +1,44 @@
-import './Navbar.css';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
+import { IoReorderThreeSharp } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 
 function Navbar() {
-    var i=1;
-    function myFunction() {
-        if(i%2!==0){
-            document.getElementById("abc").style.display="grid";
-            i++;
-        }
-        else{
-            document.getElementById("abc").style.display="none";
-            i--;
-        }
-        document.getElementById("button").classList.toggle("change");
-    }
+    const [button , setButton] = useState(true)
+    const toggleMenu = () => {
+        setButton(!button);
+      }
     
 
     return (
         <div>
-            <div id="abc" className="hidden sm:inline text-white font-bold">
-                <a href="#about" className=" mx-2 sm:border-none border-gray-300 text-center w-96 hover:text-green-400 ">About</a>
-                <a href="#projects" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Projects</a>
-                <a href="#skills" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Skills</a>
-                <a href="#achieve" className="sm:border-none border-gray-300 text-center mx-2 hover:text-green-400 ">Achievements</a>
-                <a href="#contact" className="sm:border-none  border-gray-300 text-center mx-2 hover:text-green-400 ">Contact</a>
-            </div>
-
-            <a id="button" className='icon' onClick={() => myFunction()}>
-                <div className="sm:hidden fixed top-2 right-2 mr-2 mt-2 items-center cursor-pointer">
-                    <div className="bar1 bg-white w-10 h-2 my-1"></div>
-                    <div className="bar2 bg-white w-10 h-2 my-1"></div>
-                    <div className="bar3 bg-white w-10 h-2 my-1"></div>
-                </div>
-            </a>
+      <nav className='top-0 z-10 p-5 bg-white shadow-md fixed right-0 left-0 justify-between items-center'>
+        <span className='text-2xl font-bold cursor-pointer float-left'>Sourabh Pargai</span>
+        <div className='md:hidden float-right'>
+          {button ? (
+            <IoReorderThreeSharp className='text-4xl cursor-pointer mx-2' onClick={toggleMenu} />
+          ) : (
+            <IoClose className='text-4xl cursor-pointer mx-2' onClick={toggleMenu} />
+          )}
+        </div>
+        <ul className={`float-right md:flex md:items-center md:pl-0 pl-7 w-full md:w-auto py-8 md:py-0 top-[80px] absolute left-0 bg-white md:opacity-100 md:visible md:relative md:top-auto transition-all ease-in duration-500 ${button ? 'opacity-0 invisible' : 'opacity-100 visible'}`}>
+          <li className='mx-2 lg:mx-4'>
+            <a href="/" className='text-lg lg:text-xl hover:text-cyan-500 duration-500'>About</a>
+          </li>
+          <li className='mx-2 lg:mx-4'>
+            <a href="#projects" className='text-lg lg:text-xl hover:text-cyan-500 duration-500'>Projects</a>
+          </li>
+          <li className='mx-2 lg:mx-4'>
+            <a href="#skills" className='text-lg lg:text-xl hover:text-cyan-500 duration-500'>Skills</a>
+          </li>
+          <li className='mx-2 lg:mx-4'>
+            <a href="#achieve" className='text-lg lg:text-xl hover:text-cyan-500 duration-500'>Achievements</a>
+          </li>
+          <li className='mx-2 lg:mx-4'> 
+            <a href="#contact" className='text-lg lg:text-xl hover:text-cyan-500 duration-500'>Contact</a>
+          </li>
+        </ul>
+      </nav>
         </div>
     );
 }
