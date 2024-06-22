@@ -132,8 +132,9 @@ function App() {
       <h3 className="mx-4">Status: Undergoing</h3>
       <div className=" h-60 mx-4 rounded-3xl bg-slate-500  md:mx-60 border-2 border-slate-400 lg:h-full">
         <img className="w-full h-full rounded-3xl" src="WhatsApp Image 2024-06-22 at 2.26.05 PM (1).jpeg" />
-        <h1>Welcome to My Website</h1>
-        <p>Check out our <a className="hover:text-blue-500" href="https://counsellor-frontend.vercel.app/">Counsellor Frontend</a> for more information.</p>      </div>
+      </div>
+        <h1 className="mx-4" >Welcome to My Website</h1>
+        <p className="mx-4" >Check out our <a className="hover:text-blue-500" href="https://counsellor-frontend.vercel.app/">Counsellor Frontend</a> for more information.</p>      
       </div>
 
       <div className="bg-blue-100 rounded-3xl mb-8">
