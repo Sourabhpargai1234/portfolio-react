@@ -128,10 +128,19 @@ function App() {
       </div>
 
       <div className="bg-blue-100 rounded-3xl mb-8">
+      <h3 className="mx-4" >3.Full-Stack AI Project: Counsellor.AI</h3>
+      <h3 className="mx-4">Status: Undergoing</h3>
+      <div className=" h-60 mx-4 rounded-3xl bg-slate-500  md:mx-60 border-2 border-slate-400 lg:h-full">
+        <img className="w-full h-full rounded-3xl" src="WhatsApp Image 2024-06-22 at 2.26.05 PM (1).jpeg" />
+        <h1>Welcome to My Website</h1>
+        <p>Check out our <a className="hover:text-blue-500" href="https://counsellor-frontend.vercel.app/">Counsellor Frontend</a> for more information.</p>      </div>
+      </div>
+
+      <div className="bg-blue-100 rounded-3xl mb-8">
         <h1 className="mx-4">Upcoming projects in sequece</h1>
-        <h1 className="mx-4">3. NLP project for automatic website creation through simple voice commands</h1>
-        <h1 className="mx-4">4. A coding editor which comprises of coding test contests with concepts for better learning(combination of geeksforgeeks and leetcode)</h1>
-        <h1 className="mx-4">5. NLP project on creating a LLM model which can understand rich vedic and sanskrit texts</h1>
+        <h1 className="mx-4">4. NLP project for automatic website creation through simple voice commands</h1>
+        <h1 className="mx-4">5. A coding editor which comprises of coding test contests with concepts for better learning(combination of geeksforgeeks and leetcode)</h1>
+        <h1 className="mx-4">6. NLP project on creating a LLM model which can understand rich vedic and sanskrit texts</h1>
       </div>
 </div>
 
@@ -405,7 +414,7 @@ return (
       <a href="mailto:Sourabhpargai1234@gmail.com" className="flex justify-center text-white hover:text-blue-500">Personal Mail</a>
       <a href="mailto:Sourabh.16172@gnindia.dronacharya.info" className="flex justify-center text-white hover:text-blue-500">Official Mail</a>
 
-      <div className="flex mx-4 justify-between items-center">
+      <div className="flex justify-evenly items-center">
         <a href="https://www.instagram.com/sourabhpargai1234/">
           <AiFillInstagram style={{height: 50, width: 50, color: 'white'}} onMouseOver={({target})=>target.style.color="lightblue"} onMouseOut={({target})=>target.style.color="white"}/>
         </a>
