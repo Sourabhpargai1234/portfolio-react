@@ -48,6 +48,7 @@ function App() {
         break
     }
   }
+  
   return (
     <div className="h-full w-full border-box">
 
@@ -82,9 +83,9 @@ function App() {
               </div >
 
 
-              <div className="overflow-y-auto context absolute top-16 bottom-16">
+              <div className="overflow-y-auto context absolute top-16 bottom-16 lg:overflow-hidden">
               
-                  <img className=" mt-16 md:h-80 h-60 mx-auto my-2 " src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
+                  <img className="animateSpinX mt-16 md:h-80 h-60 mx-auto my-2" src="WhatsApp Image 2024-05-06 at 10.01.57 PM-modified.png"/>
                   <h1 className="sticky top-20 z-0 lg:w-3/4 lg:mx-auto text-center font-extrabold bg-gray-600 mx-2 text-white rounded-xl">About me</h1>
                   <div className="text-white font-bold font-lg lg:w-3/4 mx-auto rounded-xl px-4 border-8 border-t-0 border-left border-right border-bottom border-gray-400 border-solid" >
                     <i >This guy is under training phase right now, updating his skills on daily basis in order to compete with the upcoming industry needs and demands. This portfolio will give you the overview of whatever he had learned until now.</i>
