@@ -14,9 +14,8 @@
 #top{
     height: 5px;
     position: fixed;
-    top: 0;
     z-index: 1000;
-    background-color: lightgreen;
+    background-color: lime;
     width: 100%;
     scale: 0 1;
     transform-origin: left;

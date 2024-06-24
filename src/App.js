@@ -51,20 +51,19 @@ function App() {
   
   return (
     <div className="h-full w-full border-box">
-
       
       <div className="fixed top-0 right-0 left-0  z-40 bg-gray-800 ">
           <div className=" h-16 float-left w-full flex items-center " >
             <h1  className="font-formal text-3xl font-bold text-white">Sourabh Pargai</h1>
           </div> 
 
-          <div className="float-right none">
+          <div>
+          <div id="top"></div>
             <Navbar />
           </div>
 
       </div>
 
-      <div id="top"></div>
 
 <div id="first" >
       <div className="area" id="about">
