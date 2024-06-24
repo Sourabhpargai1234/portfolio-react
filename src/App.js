@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbTriangleInverted } from "react-icons/tb";
+import ScrollProgressBar from "./Components/ScrollProgressBar";
 import './App.css';
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
           </div> 
 
           <div>
-          <div id="top"></div>
+            <ScrollProgressBar />
             <Navbar />
           </div>
 

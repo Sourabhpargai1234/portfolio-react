@@ -1,3 +1,14 @@
+#top {
+    height: 5px;
+    position: fixed;
+    z-index: 1000;
+    background-color: lime;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+
 @keyframes spinX {
     0% {
       transform: rotateY(0deg);
@@ -11,18 +22,6 @@
     animation: spinX 2s linear ;
     transform-origin: center;
   }
-#top{
-    height: 5px;
-    position: fixed;
-    z-index: 1000;
-    background-color: lime;
-    width: 100%;
-    scale: 0 1;
-    transform-origin: left;
-
-    animation: scroll-watcher linear;
-    animation-timeline: scroll(y);
-}
 
 @keyframes scroll-watcher{
     to{scale: 1 1;}
