@@ -148,7 +148,7 @@ function App() {
 
 
 <div id="skills" className="pt-8 ">
-<h1 className="z-20 text-center font-extrabold mt-16 sm:top-24  sticky top-20 bg-gray-600 mx-2 text-white rounded-xl">Skills</h1>
+<h1 className="z-0 text-center font-extrabold mt-16 top-20 sticky bg-gray-600 mx-2 text-white rounded-xl">Skills</h1>
       <h3 className="pt-8 text-xl text-green-600 text-center sm:mt-40 ">Click on each section to know more about skill-level</h3>
       {state==="state1" && (
                         <div id="container"  className="grid grid-cols-2 grid-rows-5 lg:grid-cols-4 lg:grid-rows-3 lg:float-left w-full justify-center items-center">
