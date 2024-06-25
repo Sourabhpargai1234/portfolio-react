@@ -1,3 +1,21 @@
+/* In your App.css or a similar file */
+.slideshow-container {
+    overflow-x: hidden; /* Changed to only hide overflow on the x-axis */
+  }
+  
+  .slideshow {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+
+
+
 #top {
     height: 5px;
     position: fixed;

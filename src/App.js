@@ -10,6 +10,7 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { TbTriangleInverted } from "react-icons/tb";
 import ScrollProgressBar from "./Components/ScrollProgressBar";
 import './App.css';
+import Projects from "./Components/Projects";
 
 function App() {
 
@@ -104,47 +105,8 @@ function App() {
 
 
 
-
-<div id="projects" className="pt-8">
-<h1 className="z-0 text-center font-extrabold mt-16 top-20 sticky bg-gray-600 mx-2 text-white rounded-xl" >Projects</h1>
-      <div className="bg-blue-100 rounded-3xl mb-8">
-      <h3 className="mx-4" >1.Mini Project: Disease Prediction Model</h3>
-      <h3 className="mx-4">Status: Completed</h3>
-      <h3 className="mx-4">Check the github repo at the footer for complete source code</h3>
-      <div className=" h-60 mx-4 rounded-3xl bg-slate-500  md:mx-60 border-2 border-slate-400 lg:h-full">
-        <video className="w-full h-full rounded-3xl" controls autoPlay loop defaultPlaybackRate={2.0}>
-          <source src="2024-05-04_00-00-10-489.mp4" type="video/mp4" />
-        </video>
-      </div>
-      </div>
-
-      <div className="bg-blue-100 rounded-3xl mb-8">
-      <h3 className="mx-4" >2.Mini Project: Remote Code Execution web-app</h3>
-      <h3 className="mx-4">Status: Not Completed(20% left)</h3>
-      <div className=" h-60 mx-4 rounded-3xl bg-slate-500  md:mx-60 border-2 border-slate-400 lg:h-full">
-        <video className="w-full h-full rounded-3xl" controls autoPlay loop defaultPlaybackRate={2.0}>
-          <source src="2024-05-04_11-27-50-144.mp4" type="video/mp4" />
-        </video>
-      </div>
-      </div>
-
-      <div className="bg-blue-100 rounded-3xl mb-8">
-      <h3 className="mx-4" >3.Full-Stack AI Project: Counsellor.AI</h3>
-      <h3 className="mx-4">Status: Undergoing</h3>
-      <div className=" h-60 mx-4 rounded-3xl bg-slate-500  md:mx-60 border-2 border-slate-400 lg:h-full">
-        <img className="w-full h-full rounded-3xl" src="WhatsApp Image 2024-06-22 at 2.26.05 PM (1).jpeg" />
-      </div>
-        <h1 className="mx-4" >Welcome to My Website</h1>
-        <p className="mx-4" >Check out our <a className="hover:text-blue-500" href="https://counsellor-frontend.vercel.app/">Counsellor Frontend</a> for more information.</p>      
-      </div>
-
-      <div className="bg-blue-100 rounded-3xl mb-8">
-        <h1 className="mx-4">Upcoming projects in sequece</h1>
-        <h1 className="mx-4">4. NLP project for automatic website creation through simple voice commands</h1>
-        <h1 className="mx-4">5. A coding editor which comprises of coding test contests with concepts for better learning(combination of geeksforgeeks and leetcode)</h1>
-        <h1 className="mx-4">6. NLP project on creating a LLM model which can understand rich vedic and sanskrit texts</h1>
-      </div>
-</div>
+<h1 className="z-30 text-center font-extrabold mt-16 top-20 sticky bg-gray-600 mx-2 text-white rounded-xl" >Projects</h1>
+<Projects />
 
 
 <div id="skills" className="pt-8 ">
