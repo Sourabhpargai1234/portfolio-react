@@ -1,4 +1,9 @@
 /* In your App.css or a similar file */
+html{
+    scroll-behavior: smooth;
+}
+
+
 .slideshow-container {
     overflow-x: hidden; /* Changed to only hide overflow on the x-axis */
   }

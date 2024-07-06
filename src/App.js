@@ -11,6 +11,7 @@ import { TbTriangleInverted } from "react-icons/tb";
 import ScrollProgressBar from "./Components/ScrollProgressBar";
 import './App.css';
 import Projects from "./Components/Projects";
+import useIntersectionObserver from './useIntersectionObserver.js';
 
 function App() {
 
